@@ -9,19 +9,21 @@ import Activities from '../../components/Activities';
 import Tips from '../../components/Tips';
 import Banner from '../../components/Banner';
 
+import colors from '../../styles/colors';
+
 export default function Home() {
   return (
     <Wrapper>
       <Container>
         <Header>
-          <MaterialCommunityIcons name="qrcode-scan" size={30} color="#10c86e" />
+          <MaterialCommunityIcons name="qrcode-scan" size={30} color={colors.GREEN_LIGHT} />
 
           <BalanceContainer>
             <BalanceTitle>Meu saldo</BalanceTitle>
             <Balance>R$ 0,00</Balance>
           </BalanceContainer>
 
-          <AntDesign name="gift" size={30} color="#10c86e" />
+          <AntDesign name="gift" size={30} color={colors.GREEN_LIGHT} />
         </Header>
 
         <Suggestions />

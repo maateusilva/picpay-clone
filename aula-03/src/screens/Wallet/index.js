@@ -33,6 +33,7 @@ import {
 } from './styles';
 
 import creditCard from '../../images/credit-card.png';
+import colors from '../../styles/colors';
 
 export default function Wallet() {
   const [isVisible, setIsVisible] = useState(true);
@@ -45,14 +46,14 @@ export default function Wallet() {
   function handleToggleUseBalance() {
     setUseBalance((prevState) => !prevState);
   }
-  
+
   return (
     <Wrapper>
       <Header
         colors={
           useBalance
-            ? ['#52E78C', '#1AB563']
-            : ['#D3D3D3', '#868686']
+            ? colors.BALANCE_ON
+            : colors.BALANCE_OFF
         }
       >
         <HeaderContainer>
@@ -64,7 +65,7 @@ export default function Wallet() {
             </Value>
 
             <EyeButton onPress={handleToggleVisibility}>
-              <Feather name={isVisible ? 'eye' : 'eye-off'} size={28} color="#fff" />
+              <Feather name={isVisible ? 'eye' : 'eye-off'} size={28} color={colors.WHITE} />
             </EyeButton>
           </BalanceContainer>
 
@@ -74,12 +75,12 @@ export default function Wallet() {
 
           <Actions>
             <Action>
-              <MaterialCommunityIcons name="cash" size={28} color="#fff" />
+              <MaterialCommunityIcons name="cash" size={28} color={colors.WHITE} />
               <ActionLabel>Adicionar</ActionLabel>
             </Action>
 
             <Action>
-              <FontAwesome name="bank" size={20} color="#fff" />
+              <FontAwesome name="bank" size={20} color={colors.WHITE} />
               <ActionLabel>Retirar</ActionLabel>
             </Action>
           </Actions>
@@ -117,7 +118,7 @@ export default function Wallet() {
           </CardBody>
 
           <AddButton>
-            <AntDesign name="pluscircleo" size={30} color="#0DB060" />
+            <AntDesign name="pluscircleo" size={30} color={colors.MATTE_GREEN} />
             <AddLabel>
               Adicionar cartão de crédito
             </AddLabel>
@@ -126,7 +127,7 @@ export default function Wallet() {
 
         <UseTicketContainer>
           <UseTicketButton>
-            <MaterialCommunityIcons name="ticket-outline" size={20} color="#0DB060" />
+            <MaterialCommunityIcons name="ticket-outline" size={20} color={colors.MATTE_GREEN} />
             <UseTicketLabel>
               Usar código promocional
             </UseTicketLabel>

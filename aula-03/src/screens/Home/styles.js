@@ -1,7 +1,8 @@
 import styled from 'styled-components/native';
+import colors from '../../styles/colors';
 
 export const Wrapper = styled.SafeAreaView`
-  background: #000;
+  background: ${colors.PRIMARY};
   flex: 1;
 `;
 
@@ -17,14 +18,16 @@ export const Header = styled.View`
 
 export const BalanceContainer = styled.View``;
 
+
 export const BalanceTitle = styled.Text`
-  color: rgba(255, 255, 255, 0.8);
+  color: ${colors.WHITE};
+  opacity: 0.8;
   font-size: 14px;
   text-align: center;
 `;
 
 export const Balance = styled.Text`
-  color: #fff;
+  color: ${colors.WHITE};
   text-align: center;
   font-size: 20px;
   font-weight: bold;

@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import colors from '../../styles/colors';
 
 export const Container = styled.View`
   margin-top: 25px;
@@ -8,7 +9,7 @@ export const Container = styled.View`
 export const Header = styled.View``;
 
 export const Title = styled.Text`
-  color: #fff;
+  color: ${colors.WHITE};
   font-size: 18px;
   font-weight: bold;
 `;
@@ -28,7 +29,7 @@ export const CardHeader = styled.View`
 export const Avatar = styled.Image``;
 
 export const Description = styled.Text`
-  color: #fff;
+  color: ${colors.WHITE};
   font-size: 16px;
   margin-left: 15px;
 `;
@@ -42,7 +43,7 @@ export const CardBody = styled.View`
 `;
 
 export const UserName = styled.Text`
-  color: #fff;
+  color: ${colors.WHITE};
   font-size: 20px;
 `;
 
@@ -58,7 +59,7 @@ export const Details = styled.View`
 `;
 
 export const Value = styled.Text`
-  color: #f75175;
+  color: ${colors.LIGHT_RED};
   font-size: 14px;
   font-weight: bold;
 `;
@@ -66,12 +67,13 @@ export const Value = styled.Text`
 export const Divider = styled.View`
   width: 2px;
   height: 13px;
-  background: rgba(255, 255, 255, 0.4);
+  background: ${colors.WHITE};
+  opacity: 0.4;
   margin: 0 10px;
 `;
 
 export const Date = styled.Text`
-  color: #fff;
+  color: ${colors.WHITE};
   margin-left: 5px;
 `;
 
@@ -85,7 +87,7 @@ export const Option = styled.TouchableOpacity`
 `;
 
 export const OptionLabel = styled.Text`
-  color: #fff;
+  color: ${colors.WHITE};
   font-size: 14px;
   margin-left: 5px;
 `;
