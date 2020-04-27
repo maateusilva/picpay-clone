@@ -21,6 +21,7 @@ import {
   Option,
   OptionLabel,
 } from './styles';
+import colors from '../../styles/colors';
 
 import avatar from '../../images/avatar.png';
 
@@ -49,18 +50,18 @@ export default function Activities() {
 
             <Divider />
 
-            <Feather name="lock" color="#fff" size={14} />
+            <Feather name="lock" color={colors.WHITE} size={14} />
             <Date>há 2 anos</Date>
           </Details>
 
           <Actions>
             <Option>
-              <MaterialCommunityIcons name="comment-outline" size={14} color="#fff" />
+              <MaterialCommunityIcons name="comment-outline" size={14} color={colors.WHITE} />
               <OptionLabel>0</OptionLabel>
             </Option>
 
             <Option>
-              <AntDesign name="hearto" size={14} color="#fff" />
+              <AntDesign name="hearto" size={14} color={colors.WHITE} />
               <OptionLabel>0</OptionLabel>
             </Option>
           </Actions>

@@ -1,7 +1,8 @@
 import styled from 'styled-components/native';
+import colors from '../../styles/colors';
 
 export const Container = styled.View`
-  background: #6882BB;
+  background: ${colors.GRAY_BLUE};
   margin: 25px 16px;
   border-radius: 8px;
   height: 150px;
@@ -17,13 +18,13 @@ export const Details = styled.View`
 export const Img = styled.Image``;
 
 export const Title = styled.Text`
-  color: #fff;
+  color: ${colors.WHITE};
   font-size: 18px;
   font-weight: bold;
 `;
 
 export const Description = styled.Text`
-  color: #fff;
+  color: ${colors.WHITE};
   font-size: 14px;
   margin-top: 15px;
 `;

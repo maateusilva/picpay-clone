@@ -1,8 +1,9 @@
 import styled from 'styled-components/native';
 import { LinearGradient } from 'expo-linear-gradient';
+import colors from '../../styles/colors';
 
 export const Wrapper = styled.View`
-  background: #000;
+  background: ${colors.PRIMARY};
   flex: 1;
 `;
 
@@ -17,7 +18,7 @@ export const HeaderContainer = styled.SafeAreaView`
 `;
 
 export const Title = styled.Text`
-  color: #fff;
+  color: ${colors.WHITE};
   font-size: 16px;
   font-weight: bold;
 `;
@@ -30,7 +31,7 @@ export const BalanceContainer = styled.View`
 
 export const Value = styled.Text`
   font-size: 38px;
-  color: #fff;
+  color: ${colors.WHITE};
   font-weight: 200;
 `;
 
@@ -43,7 +44,7 @@ export const EyeButton = styled.TouchableOpacity`
 `;
 
 export const Info = styled.Text`
-  color: #fff;
+  color: ${colors.WHITE};
   font-size: 14px;
   font-weight: bold;
 `;
@@ -57,21 +58,22 @@ export const Action = styled.TouchableOpacity`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid ${colors.WHITE};
   width: 150px;
   height: 45px;
   border-radius: 25px;
   margin: 0 10px;
+  opacity: 0.6;
 `;
 
 export const ActionLabel = styled.Text`
   font-size: 16px;
-  color: #fff;
+  color: ${colors.WHITE};
   margin-left: 10px;
 `;
 
 export const UseBalance = styled.View`
-  background: #1C1C1E;
+  background: ${colors.LIGHT_MATTE_BLACK};
   height: 60px;
   flex-direction: row;
   padding: 0 16px;
@@ -80,7 +82,7 @@ export const UseBalance = styled.View`
 `;
 
 export const UseBalanceTitle = styled.Text`
-  color: #fff;
+  color: ${colors.WHITE};
   font-size: 16px;
   font-weight: 500;
 `;
@@ -96,7 +98,7 @@ export const PaymentMethodsTitle = styled.Text`
 `;
 
 export const Card = styled.View`
-  background: #1E232A;
+  background: ${colors.MATTE_BLACK};
   padding: 20px;
   border-radius: 8px;
   margin-top: 10px;
@@ -114,13 +116,14 @@ export const CardDetails = styled.View`
 export const CardTitle = styled.Text`
   font-size: 18px;
   font-weight: bold;
-  color: #fff;
+  color: ${colors.WHITE};
 `;
 
 export const CardInfo = styled.Text`
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.8);
+  color: ${colors.WHITE};
   margin-top: 15px;
+  opacity: 0.8;
 `;
 
 export const Img = styled.Image`
@@ -134,7 +137,7 @@ export const AddButton = styled.TouchableOpacity`
 `;
 
 export const AddLabel = styled.Text`
-  color: #0DB060;
+  color: ${colors.MATTE_GREEN};
   font-size: 18px;
   font-weight: bold;
   margin-left: 15px;
@@ -150,7 +153,7 @@ export const UseTicketButton = styled.TouchableOpacity`
 `;
 
 export const UseTicketLabel = styled.Text`
-  color: #0DB060;
+  color: ${colors.MATTE_GREEN};
   font-size: 16px;
   font-weight: bold;
   margin-left: 15px;

@@ -7,6 +7,7 @@ import PayButton from './components/PayButton';
 import HomeScreen from './screens/Home';
 import WalletScreen from './screens/Wallet';
 import PayScreen from './screens/Pay';
+import colors from './styles/colors';
 
 const Tab = createBottomTabNavigator();
 
@@ -50,11 +51,11 @@ export default function Navigation() {
       })}
       tabBarOptions={{
         style: {
-          backgroundColor: '#131418',
-          borderTopColor: 'rgba(255, 255, 255, 0.2)',
+          backgroundColor: colors.MATTE_BLACK,
+          borderTopColor: colors.LIGHT_GREY,
         },
-        activeTintColor: '#fff',
-        inactiveTintColor: '#92929c',
+        activeTintColor: colors.WHITE,
+        inactiveTintColor: colors.GREY,
       }}
     >
       <Tab.Screen

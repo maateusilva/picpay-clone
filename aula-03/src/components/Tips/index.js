@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Container, Option, Title, Img } from './styles';
+import colors from '../../styles/colors';
 
 import img8 from '../../images/08.png';
 import img9 from '../../images/09.png';
@@ -13,31 +14,31 @@ const items = [
     key: String(Math.random()),
     img: img8,
     title: 'Pague suas contas sem sair de casa',
-    bgColor: '#172c4a',
+    bgColor: colors.DARK_BLUE,
   },
   {
     key: String(Math.random()),
     img: img9,
     title: 'Pague suas contas sem sair de casa',
-    bgColor: '#6a0159',
+    bgColor: colors.LIGHT_LILAC,
   },
   {
     key: String(Math.random()),
     img: img10,
     title: 'Pague suas contas sem sair de casa',
-    bgColor: '#4139c8',
+    bgColor: colors.LIGHT_BLUE,
   },
   {
     key: String(Math.random()),
     img: img11,
     title: 'Pague suas contas sem sair de casa',
-    bgColor: '#00ab4b',
+    bgColor: colors.DARK_GREEN,
   },
   {
     key: String(Math.random()),
     img: img12,
     title: 'Pague suas contas sem sair de casa',
-    bgColor: '#ba2f76',
+    bgColor: colors.DARK_LILAC,
   },
 ];
 
